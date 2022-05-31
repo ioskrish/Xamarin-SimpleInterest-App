@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSimpleInterest.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#0288D1" Padding="24" CornerRadius="0">
+            <Label Text="SIMPLE INTEREST" HorizontalTextAlignment="Center" TextColor="AntiqueWhite" FontSize="20"/>
+        </Frame>
+
+        <Label Text="Principal Amount (Rs)" Margin="0,10,0,0" TextColor="DarkRed" HorizontalTextAlignment="Center" />
+        <Entry  x:Name="pname"  Placeholder="0.0" Margin="60,5,60,0" PlaceholderColor="#303F9F" FontSize="Small" HorizontalTextAlignment="Center" />
+
+        <Label Text="No. Of Years"  TextColor="DarkRed" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="tname"  Placeholder="0.0" PlaceholderColor="#303F9F" Margin="60,5,60,0" FontSize="Small" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Rate of Interest(%)"  TextColor="DarkRed" HorizontalTextAlignment="Center" />
+        <Entry x:Name="rname"     Placeholder="0.0" PlaceholderColor="#303F9F" Margin="60,5,60,0" FontSize="Small" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Interest Amount (Rs)"  TextColor="DarkRed" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="iname"  FontSize="Small" PlaceholderColor="#303F9F" Margin="60,5,60,0" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Total Amount (Rs)"  TextColor="DarkRed" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="yname"  FontSize="Small" PlaceholderColor="#303F9F" Margin="60,5,60,0" HorizontalTextAlignment="Center"/>
+
+        <Button Text="CALCULATE"  Clicked="Simpleinterest" TextColor="AntiqueWhite" Margin="20,5,20,0" BackgroundColor= "#1976D2" BorderColor="Black"  CornerRadius="20" />
+        <Label FontSize="16" Padding="30,24,30,0">
+        </Label>
+        <Button Text="CLEAR" Clicked="Button_Clicked" TextColor="AntiqueWhite" Margin="20,-40,20,0" BackgroundColor= "#1976D2" BorderColor="Black"  CornerRadius="20" />
+        <Label FontSize="16" >
+            
+                <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
